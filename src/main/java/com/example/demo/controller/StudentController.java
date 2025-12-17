@@ -16,7 +16,7 @@ public class StudentController {
     @Autowired
     private StudentService ser;
 
-    @PostMapping("/postStudent")
+    @PostMapping("/post")
     public Student postStd(@RequestBody Student st) {
         return ser.insertStudent(st);
     }
