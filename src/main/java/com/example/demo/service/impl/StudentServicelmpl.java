@@ -11,25 +11,25 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
     @Autowired
     Studentrepo strepo;
-    @override
+    @Override
 
     public Student insertStudent(Student st){
         return strepo.save(st);
-    }
+    }   
 
-    @override
+    @Override
     public List<Student> getAllStudents(){
         return strep.findAll(st);
     }
 
-    @override
+    @Override
     public Optional<Student> getOneStudent(Long id){
-        return strep.
+        return strep.findById(id);
     }
 
-    @override
+    @Override
     public void deleteStudent(Long id){
-        return 
+        return strepo.deleteById(id);
     }
 
 
