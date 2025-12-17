@@ -14,7 +14,7 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    private Studentrepo strepo;
+    private StudentRepo strepo;
 
     @Override
     public Student insertStudent(Student st) {
