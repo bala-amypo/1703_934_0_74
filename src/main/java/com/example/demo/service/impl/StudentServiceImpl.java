@@ -27,13 +27,10 @@ public class StudentServiceImpl implements StudentService {
     }
     @override
     public Student update(Student st){
-        return strepo.save(st)l
+        return strepo.save(st);
     }
 
-    @Override
-    public Optional<Student> getOneStudent(Long id) {
-        return strepo.findById(id);
-    }
+    
 
     @Override
     public void deleteStudent(Long id) {
