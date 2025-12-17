@@ -23,6 +23,9 @@ public class StudentController{
         Optional<Student> student=ser.getOneStudent(id);
         if(student.iSPresent()){
             newStudent.setId(id);
+            ser.insertStudent(newStudent)
+            return "Updated";
         }
+        return "id not found";
     }
 }
