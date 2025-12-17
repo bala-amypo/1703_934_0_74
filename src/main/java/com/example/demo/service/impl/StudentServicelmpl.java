@@ -14,7 +14,12 @@ public class StudentServiceImpl implements StudentService{
     @override
 
     public Student insertStudent(Student st){
-        return 
+        return strepo.save(st);
+    }
+
+    @override
+    public List<Student> getAllStudents(){
+        return strep.findAll(st);
     }
 
 
