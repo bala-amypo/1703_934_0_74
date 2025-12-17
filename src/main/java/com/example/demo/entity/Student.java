@@ -11,7 +11,7 @@ import jakarta.annotation.Generated;
 public class Student {
 
     @Id
-    @GeneratedValue(Strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 
     private Long id;
     private String name;
