@@ -22,6 +22,15 @@ public class StudentServiceImpl implements StudentService{
         return strep.findAll(st);
     }
 
+    @override
+    public Optional<Student> getOneStudent(Long id){
+        return strep.
+    }
+
+    @override
+    public void deleteStudent(Long id){
+        return 
+    }
 
 
 }
