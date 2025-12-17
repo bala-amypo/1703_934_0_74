@@ -24,8 +24,18 @@ public class StudentController{
         if(student.iSPresent()){
             newStudent.setId(id);
             ser.insertStudent(newStudent)
-            return "Updated";
+            return "Updated Success";
         }
         return "id not found";
+    }
+
+    @DeleteMapping("/del/{id}")
+    public String deleteStudent(@PathVariable Long id ){
+        Option<Student> student = ser.getOneStudent(id);
+        if(student.iSPresent()){
+            ser.deleteStudent(id);
+            return "Deleted Success";
+        }
+        return "Id Not Found";
     }
 }
